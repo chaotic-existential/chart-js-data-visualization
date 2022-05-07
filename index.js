@@ -1,9 +1,7 @@
-let chart1990 = $("#chart1990");
-let chart2000 = $("#chart2000");
-let chart2010 = $("#chart2010");
+let chart2019 = $("#chart2019");
 let chart2020 = $("#chart2020");
 
-let pies = [chart1990, chart2000, chart2010, chart2020]
+let pies = [chart2019, chart2020]
 
 pies.forEach((name, i) => new Chart(name, {
     type: 'doughnut',
@@ -12,14 +10,25 @@ pies.forEach((name, i) => new Chart(name, {
         datasets: [
             {
                 data: [
-                    values[0][i],
-                    values[1][i],
-                    values[2][i]],
+                    values[i][0],
+                    values[i][1],
+                    values[i][2],
+                    values[i][3],
+                    values[i][4],
+                    values[i][5],
+                    values[i][7],
+                    values[i][8],
+                    values[i][9],
+                    values[i][10]],
                 cutout: '60%',
                 spacing: 4,
                 rotation: 90,
-                backgroundColor: ['#bc5290', '#58508d', '#ffa600'],
-                borderColor: ['#971d65', '#38335a', '#724900'],
+                backgroundColor:
+                    ['#602969', '#752d6f', '#8b3271', '#a1386f', '#b73d6b',
+                        '#cc4664' , '#db565d', '#e46c5d', '#e88366', '#eb9973'],
+                borderColor:
+                    ['#311535', '#41193e', '#571f47', '#6d264b', '#832c4d',
+                        '#99344a' , '#a74147', '#b15348', '#b4664f', '#b7775a'],
                 borderWidth: 3,
                 borderRadius: 10,
                 hoverOffset: 10
@@ -33,11 +42,14 @@ pies.forEach((name, i) => new Chart(name, {
         },
         plugins: {
             title: {
-                text: `${1990+i*10} год`,
+                text: `${2019+i} год`,
                 display: true
             },
             legend: {
-                display: true
+                display: true,
+                reverse: true,
+                position: 'right',
+                rtl: true,
             }
         }
     }
