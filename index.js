@@ -15,12 +15,11 @@ new Chart(chart1, {
                     values[5],
                     values[6],
                     values[7],
-                    values[8],
-                    values[9]],
+                    values[8]],
                 fill: true,
-                backgroundColor: "rgba(100, 220, 10, 0.05)",
+                backgroundColor: "rgba(2, 130, 130, 0.05)",
                 // 0.25, если в браузере используется белый фон
-                borderColor: "#5EB804",
+                borderColor: "#04b8b2",
                 borderWidth: 2,
                 pointRadius: 0,
                 pointHitRadius: 100
@@ -34,7 +33,7 @@ new Chart(chart1, {
         },
         plugins: {
             title: {
-                text: `Данные за период с ${labels[0]} по ${labels.at(-1)}`,
+                text: `Период с ${labels[0]} по ${labels.at(-1)} по данным IC Insights`,
                 display: true
             },
             legend: {
@@ -43,8 +42,12 @@ new Chart(chart1, {
         },
         scales: {
             yAxis: {
+                title: {
+                    text: `миллиарды единиц поставок`,
+                    display: true
+                },
                 suggestedMin: 70,
-                suggestedMax: 80
+                suggestedMax: 450
             }
         }
     }
