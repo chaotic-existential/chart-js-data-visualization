@@ -1,5 +1,6 @@
-let chart1 = $("#chart1");
-let chart2 = $("#chart2");
+let chart1 = $("#chart1"); // Рынок по производству полупроводников
+let chart2 = $("#chart2"); // Международные поставки микросхем
+let chart3 = $("#chart3"); // Доходы компании TSMC
 
 new Chart(chart1, {
     type: 'doughnut',
@@ -34,9 +35,6 @@ new Chart(chart1, {
     },
 
     options: {
-        layout: {
-            padding: 20
-        },
         plugins: {
             title: {
                 text: `Февраль 2021 по данным Counterpoint`,
@@ -68,9 +66,9 @@ new Chart(chart2, {
                     values2[7],
                     values2[8]],
                 fill: true,
-                backgroundColor: "rgba(2, 130, 130, 0.05)",
+                backgroundColor: "rgba(129, 179, 134, 0.05)",
                 // 0.25, если в браузере используется белый фон
-                borderColor: "#04b8b2",
+                borderColor: "#a6e7ad",
                 borderWidth: 2,
                 pointRadius: 0,
                 pointHitRadius: 100
@@ -80,7 +78,7 @@ new Chart(chart2, {
 
     options: {
         layout: {
-            padding: 20
+            padding: 10
         },
         plugins: {
             title: {
@@ -104,3 +102,53 @@ new Chart(chart2, {
     }
 });
 
+new Chart(chart3, {
+    type: 'line',
+    data: {
+        labels: labels,
+        datasets: [
+            {
+                data: [
+                    values[0][0],
+                    values[0][1],
+                    values[0][2],
+                    values[0][3],
+                    values[0][4],
+                    values[0][5],
+                    values[0][6],
+                    values[0][7],
+                    values[0][8],
+                    values[0][9],
+                    values[0][10]],
+                fill: true,
+                backgroundColor: "rgba(39, 65, 121, 0.05)",
+                // 0.25, если в браузере используется белый фон
+                borderColor: "#416ac6",
+                borderWidth: 2,
+                pointRadius: 0,
+                pointHitRadius: 100
+            }
+        ]
+    },
+
+    options: {
+
+        plugins: {
+            title: {
+                text: `Период с ${labels[0]} по ${labels.at(-1)}`,
+                display: true
+            },
+            legend: {
+                display: false
+            }
+        },
+        scales: {
+            yAxis: {
+                title: {
+                    text: `млн.долларов`,
+                    display: true
+                }
+            }
+        }
+    }
+});
