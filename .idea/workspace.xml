@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15fe0d35-715a-4f35-a884-618f2888d977" name="Changes" comment="📍 fix: updated values indexes list used in index.js">
-      <change afterPath="$PROJECT_DIR$/source.png" afterDir="false" />
+    <list default="true" id="15fe0d35-715a-4f35-a884-618f2888d977" name="Changes" comment="📍 fix: corrected values declaration in index.js">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preview.gif" beforeDir="false" afterPath="$PROJECT_DIR$/preview.gif" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +18,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="task3" />
+        <entry key="$PROJECT_DIR$" value="test1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,7 +63,7 @@
       <workItem from="1651948391613" duration="5351000" />
       <workItem from="1651991332186" duration="165000" />
       <workItem from="1651991511589" duration="6143000" />
-      <workItem from="1652013197173" duration="1552000" />
+      <workItem from="1652013197173" duration="3222000" />
     </task>
     <task id="LOCAL-00001" summary="✨ simple GDP dynamic visualization task1">
       <created>1651948005786</created>
@@ -90,7 +86,21 @@
       <option name="project" value="LOCAL" />
       <updated>1651953605490</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="✨ simple IC Units shipment visualization test1">
+      <created>1652014800278</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1652014800278</updated>
+    </task>
+    <task id="LOCAL-00005" summary="📍 fix: corrected values declaration in index.js">
+      <created>1652014971201</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1652014971201</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +120,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="✨ simple GDP dynamic visualization task1" />
     <MESSAGE value="✨ simple GDP dynamic visualization task2" />
-    <option name="LAST_COMMIT_MESSAGE" value="✨ simple GDP dynamic visualization task2" />
+    <MESSAGE value="✨ simple IC Units shipment visualization test1" />
+    <MESSAGE value=" fix: corrected values declaration in index.js" />
+    <option name="LAST_COMMIT_MESSAGE" value=" fix: corrected values declaration in index.js" />
   </component>
 </project>
