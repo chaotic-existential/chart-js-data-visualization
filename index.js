@@ -21,7 +21,7 @@ pies.forEach((name, i) => new Chart(name, {
                     values[i][8],
                     values[i][9]],
                 cutout: '60%',
-                spacing: 4,
+                spacing: 2,
                 rotation: 90,
                 backgroundColor:
                     ['#602969', '#752d6f', '#8b3271', '#a1386f', '#b73d6b',
@@ -29,8 +29,8 @@ pies.forEach((name, i) => new Chart(name, {
                 borderColor:
                     ['#311535', '#41193e', '#571f47', '#6d264b', '#832c4d',
                         '#99344a' , '#a74147', '#b15348', '#b4664f', '#b7775a'],
-                borderWidth: 3,
-                borderRadius: 10,
+                borderWidth: 2,
+                borderRadius: 5,
                 hoverOffset: 10
             }
         ]

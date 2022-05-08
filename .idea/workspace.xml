@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15fe0d35-715a-4f35-a884-618f2888d977" name="Changes" comment="✨ simple GDP dynamic visualization task1">
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preview.gif" beforeDir="false" />
-    </list>
+    <list default="true" id="15fe0d35-715a-4f35-a884-618f2888d977" name="Changes" comment="✨ simple GDP dynamic visualization task1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
