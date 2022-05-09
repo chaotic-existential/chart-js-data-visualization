@@ -108,6 +108,7 @@ new Chart(chart3, {
         labels: labels,
         datasets: [
             {
+                label: "predicted income",
                 data: [
                     values[0][0],
                     values[0][1],
@@ -121,9 +122,33 @@ new Chart(chart3, {
                     values[0][9],
                     values[0][10]],
                 fill: true,
+                order: 2,
                 backgroundColor: "rgba(39, 65, 121, 0.05)",
                 // 0.25, если в браузере используется белый фон
-                borderColor: "#416ac6",
+                borderColor: "rgba(42, 70, 133, 0.8)",
+                borderWidth: 2,
+                pointRadius: 0,
+                pointHitRadius: 100
+            },
+            {
+                label: "factual income",
+                data: [
+                    values[1][0],
+                    values[1][1],
+                    values[1][2],
+                    values[1][3],
+                    values[1][4],
+                    values[1][5],
+                    values[1][6],
+                    values[1][7],
+                    values[1][8],
+                    values[1][9],
+                    values[1][10]],
+                fill: true,
+                order: 1,
+                backgroundColor: "rgba(44, 126, 140, 0.05)",
+                // 0.25, если в браузере используется белый фон
+                borderColor: "#3eb6ca",
                 borderWidth: 2,
                 pointRadius: 0,
                 pointHitRadius: 100
@@ -139,7 +164,8 @@ new Chart(chart3, {
                 display: true
             },
             legend: {
-                display: false
+                display: true,
+                reverse: true
             }
         },
         scales: {
